@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br>
+    <button onclick="AlertName('Get Geolocation')" class="btn btn-primary">Get Geolocation</button>
+    <button onclick="AlertName('Reset to ARA')" class="btn btn-primary">Reset to ARA</button>
+<br>
+<p>
+<div id="map"></div>
+
+@section scripts {
+
+<script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp4vd5-f9RYM7Jvv5W_CZ1S5awmFJBMUw&callback=initMap">
+</script>
+}
